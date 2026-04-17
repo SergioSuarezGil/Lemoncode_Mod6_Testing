@@ -6,5 +6,13 @@ export default defineConfig({
     restoreMocks: true,
     environment: 'jsdom',
     setupFiles: ['./config/test/setup.ts'],
+    exclude: [
+      'playwright/**/*.spec.ts',
+      'cypress/**/*.cy.{js,ts,jsx,tsx}',
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/cypress/**',
+      '**/coverage/**',
+    ],
   },
 });
