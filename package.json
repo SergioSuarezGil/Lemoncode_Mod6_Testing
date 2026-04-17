@@ -15,7 +15,8 @@
     "test:coverage": "vitest run --coverage -c ./config/test/config.ts",
     "test:cypress": "cypress run",
     "clean": "rimraf dist",
-    "test:playwright": "playwright test"
+    "test:playwright": "playwright test",
+    "preview": "vite preview"
   },
   "imports": {
     "#*": "./src/*"
