@@ -59,7 +59,7 @@ jobs:
           NODE_ENV: test
 
       - name: Wait for server to be ready
-        run: npx wait-on http://localhost:5173
+        run: npx wait-on http://localhost:4173
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
